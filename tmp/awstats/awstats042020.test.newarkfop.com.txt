@@ -1,0 +1,356 @@
+AWSTATS DATA FILE 7.7 (build 20180105)
+# If you remove this file, all statistics for date 202004 will be lost/reset.
+# Last config file used to build this data file was /home/waw68qveviqa/tmp/awstats/awstats.test.newarkfop.com.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2019                
+POS_TIME 2705                
+POS_VISITOR 9147                
+POS_DAY 10002               
+POS_DOMAIN 3421                
+POS_LOGIN 3688                
+POS_ROBOT 3885                
+POS_WORMS 4100                
+POS_EMAILSENDER 4231                
+POS_EMAILRECEIVER 4374                
+POS_SESSION 10121               
+POS_SIDER 10328               
+POS_FILETYPES 4509                
+POS_DOWNLOADS 4738                
+POS_OS 4870                
+POS_BROWSER 5014                
+POS_SCREENSIZE 5338                
+POS_UNKNOWNREFERER 5412                
+POS_UNKNOWNREFERERBROWSER 5499                
+POS_ORIGIN 5581                
+POS_SEREFERRALS 5721                
+POS_PAGEREFS 5865                
+POS_SEARCHWORDS 6013                
+POS_KEYWORDS 6165                
+POS_MISC 2369                
+POS_ERRORS 6224                
+POS_CLUSTER 3544                
+POS_SIDER_404 6368                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20200501001923 1866 441661 13069093923001
+FirstTime 20200429130014
+LastTime 20200430233509
+LastUpdate 20200501052503 1866 0 1865 0 0
+TotalVisits 46                  
+TotalUnique 18                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 18                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+WindowsMediaPlayerSupport 0 0 0
+RealPlayerSupport 0 0 0
+DirectorSupport 0 0 0
+JavascriptDisabled 0 0 0
+FlashSupport 0 0 0
+TotalMisc 0 0 0
+PDFSupport 0 0 0
+JavaEnabled 0 0 0
+AddToFavourites 0 0 0
+QuickTimeSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 0 0 0 0 0 0
+1 0 0 0 0 0 0
+2 0 0 0 0 0 0
+3 0 0 0 0 0 0
+4 0 0 0 0 0 0
+5 0 0 0 0 0 0
+6 0 0 0 0 0 0
+7 0 0 0 0 0 0
+8 0 0 0 0 0 0
+9 26 125 141063781 0 6 6770155
+10 41 111 48261274 0 11 0
+11 119 236 65346356 28 38 210362
+12 49 109 57081288 2 6 0
+13 69 190 5782258 20 242 187621
+14 150 584 232183144 57 127 24538105
+15 305 1080 550371222 82 133 10560971
+16 84 229 67210333 104 135 14241162
+17 83 257 100547761 32 39 486711
+18 70 197 115559332 11 15 2625
+19 105 505 347981485 5 94 9867443
+20 76 339 84874341 4 17 8606
+21 85 244 58429788 48 58 402072
+22 16 76 55808190 0 1 0
+23 3 8 5073 0 10 6856
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 3
+us 1249 4125 1909615648
+cz 29 162 20875551
+zz 3 3 14427
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 1
+waw68qveviqa 10 10 3076153 20200430190812
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 2
+facebookexternalhit/ 6 9912 20200429195613 0
+Discordbot/ 1 469860 20200429172149 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 8
+php 1024 1242430 0 0
+css 719 535532 0 0
+pdf 5 3650581 0 0
+jpg 1762 1881945638 0 0
+js 145 4505155 0 0
+html 171 274100 0 0
+Unknown 86 4607637 0 0
+png 378 33744553 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 3
+/NewarkFOP1.pdf 3 0 1272414
+/NewarkFOP2.pdf 1 0 429215
+/FOPcontract.pdf 1 0 1948952
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 5
+macosx12 966 313
+win10 1708 581
+macosx 539 183
+ios_iphone 914 174
+linux 163 30
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 13
+safari13.1 69 22
+firefox75.0 286 47
+chrome81.0.4044.129 2416 898
+safari13.0.4 301 50
+safari13.0.5 464 108
+safari 70 11
+chrome75.0.3770.100 53 10
+safari10.1.2 73 8
+chrome49.0.2623.75 1 1
+safari13.1.1 72 3
+safari12.1.2 6 1
+chrome78.0.3882.0 162 29
+chrome81.0.4044.122 317 93
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 0
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 0
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 260 260
+From1 0 0
+From2 0 0
+From3 0 0
+From4 1021 4030
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 0
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 5
+301 3 726
+500 23 1011
+404 351 252815
+206 83 66365827
+302 288 182538
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 45
+/images/vp.jpg 7 http://test.newarkfop.com/aboutus.php
+/banner%20images/IMG_1863.jpg 7 http://test.newarkfop.com/aboutus.php
+/banner%20images/IMG_1864.jpg 7 http://test.newarkfop.com/aboutus.php
+/images/om.jpg 7 http://test.newarkfop.com/aboutus.php
+/uploads/ 3 -
+/images/logo.png 7 http://test.newarkfop.com/aboutus.php
+/banner%20images/IMG_1874.jpg 7 http://test.newarkfop.com/aboutus.php
+/banner%20images/IMG_1871.jpg 7 http://test.newarkfop.com/aboutus.php
+/banner%20images/IMG_1876.jpg 7 http://test.newarkfop.com/aboutus.php
+/banner%20images/IMG_1879.jpg 7 http://test.newarkfop.com/aboutus.php
+/banner%20images/IMG_1873.jpg 7 http://test.newarkfop.com/aboutus.php
+/js/crusal.js 11 http://test.newarkfop.com/aboutus.php
+/images/sec.jpg 7 http://test.newarkfop.com/aboutus.php
+/apple-touch-icon.png 12 -
+/banner%20images/IMG_1869.jpg 7 http://test.newarkfop.com/aboutus.php
+/aboutus 1 -
+/ 32 -
+/uploads/Smith_Bob_fop_form 14 -
+/images/tres.jpg 7 http://test.newarkfop.com/aboutus.php
+/css/owl.carousel.css 10 http://test.newarkfop.com/aboutus.php
+/images/banner.png 8 http://test.newarkfop.com/aboutus.php
+/banner%20images/IMG_1865.jpg 7 http://test.newarkfop.com/aboutus.php
+/apple-touch-icon-120x120-precomposed.png 6 -
+/apple-touch-icon-120x120.png 6 -
+/home 3 http://test.newarkfop.com/contactus
+/upload.php 6 http://test.newarkfop.com/memberpage.php
+/banner%20images/IMG_1866.jpg 7 http://test.newarkfop.com/aboutus.php
+/banner%20images/IMG_1870.jpg 7 http://test.newarkfop.com/aboutus.php
+/images/plogo.png 7 http://test.newarkfop.com/aboutus.php
+/images/seal.png 7 http://test.newarkfop.com/aboutus.php
+/banner%20images/IMG_1877.jpg 7 http://test.newarkfop.com/aboutus.php
+/css/kd.css 7 http://test.newarkfop.com/aboutus.php
+/banner%20images/IMG_1868.jpg 7 http://test.newarkfop.com/aboutus.php
+/home.php 10 http://test.newarkfop.com/donate.php
+/banner%20images/IMG_1872.jpg 7 http://test.newarkfop.com/aboutus.php
+/banner%20images/IMG_1867.jpg 7 http://test.newarkfop.com/aboutus.php
+/uploads 1 -
+/js/jquery-1.11.2.js 11 http://test.newarkfop.com/aboutus.php
+/banner%20images/IMG_1875.jpg 7 http://test.newarkfop.com/aboutus.php
+/banner%20images/IMG_1881.jpg 6 http://test.newarkfop.com/aboutus.php
+/images/pres.jpg 7 http://test.newarkfop.com/aboutus.php
+/apple-touch-icon-precomposed.png 12 -
+/login 2 http://test.newarkfop.com/home
+/css/owl.theme.css 11 http://test.newarkfop.com/aboutus.php
+/js/owl.carousel.js 11 http://test.newarkfop.com/aboutus.php
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 18
+71.172.40.234 557 1574 433751670 20200430233509
+70.44.112.124 239 718 317619033 20200430210528
+108.35.151.163 154 438 138200365 20200430185720
+174.225.9.137 98 445 137287724 20200429164826
+108.35.95.217 56 344 412697526 20200430150254
+173.63.87.15 48 141 75448318 20200430190724
+195.74.76.194 29 162 20875551 20200430185801
+174.225.0.222 29 117 69431407 20200430104423
+68.199.37.232 25 116 110624419 20200430151220
+64.20.56.100 20 67 55746626 20200430160100
+68.236.192.104 10 53 46219498 20200430105304
+166.137.252.80 5 20 1292066 20200429194618
+10.47.76.37 3 3 14427 20200429130322
+148.74.235.84 3 72 109673352 20200430184108
+108.53.24.152 2 7 541776 20200429175829
+108.12.0.139 1 6 540124 20200429160828
+96.242.1.154 1 6 540115 20200429195633
+66.249.83.72 1 1 1629 20200430172420
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 2
+20200429 688 2643 1052642973 20
+20200430 593 1647 877862653 26
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+30s-2mn 4
+0s-30s 11
+15mn-30mn 4
+1h+ 11
+30mn-1h 5
+2mn-5mn 5
+5mn-15mn 6
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 27
+/login.php 256 222973 3 7
+/contactus.php 181 264306 3 1
+/ 171 274100 37 15
+/home.php 143 235298 0 5
+/donate.php 104 110290 0 6
+/aboutus.php 90 140580 1 3
+/memberpage.php 82 112348 0 1
+/events.php 55 41292 0 2
+/forgot.php 33 25022 0 0
+/signup.php 29 48492 1 0
+/login 28 24500 0 0
+/police.php 24 21778 0 0
+/reset.php 18 17252 0 0
+/cpanel 14 175521 1 2
+/home 9 14799 0 1
+/upload.php 8 1147 0 0
+/uploads/Smith_Bob_fop_form 7 3004505 0 0
+/signup 7 11748 0 0
+/contactus 4 5246 0 0
+/aboutus 4 6200 0 0
+/uploads/Smith_Bob_license 3 454984 0 0
+/forgot 3 2205 0 0
+/donate 2 2120 0 0
+/events 2 1500 0 0
+/uploads/Smith_Bob_registration 2 480171 0 2
+/uploads/Gonzalez_Carolina_fop_form 1 424138 0 1
+/index.php 1 1652 0 0
+END_SIDER

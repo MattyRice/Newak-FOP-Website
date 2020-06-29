@@ -1,0 +1,4 @@
+Running command: /usr/local/cpanel/3rdparty/bin/git clone --origin=origin https://github.com/RxNexium/newarkfopweb.git /home/waw68qveviqa/repositories/newarkfop
+
+Cloning into '/home/waw68qveviqa/repositories/newarkfop'...
+warning: You appear to have cloned an empty repository.

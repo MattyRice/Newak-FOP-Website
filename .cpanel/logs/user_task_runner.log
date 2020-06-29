@@ -1,0 +1,15 @@
+2020-06-15T14:37:57Z: Processing 00000000/5ee787c515ec61...
+2020-06-15T14:37:57Z:   doing Cpanel::UserTasks::VersionControl::create
+2020-06-15T14:37:57Z:   FAILURE: (XID hkpn6a) “/usr/local/cpanel/3rdparty/bin/git” reported error code “128” when it ended: 
+2020-06-15T14:37:57Z: Queue empty, terminating
+2020-06-15T14:38:20Z: Processing 00000000/5ee787dc2ea93f...
+2020-06-15T14:38:20Z:   doing Cpanel::UserTasks::VersionControl::create
+2020-06-15T14:38:20Z:   FAILURE: (XID ty8z7p) “/usr/local/cpanel/3rdparty/bin/git” reported error code “128” when it ended: 
+2020-06-15T14:38:20Z: Queue empty, terminating
+2020-06-15T14:40:11Z: Processing 00000000/5ee7884b4fdc47...
+2020-06-15T14:40:11Z:   doing Cpanel::UserTasks::VersionControl::create
+2020-06-15T14:40:11Z:   FAILURE: (XID xxbdt9) “/usr/local/cpanel/3rdparty/bin/git” reported error code “128” when it ended: 
+2020-06-15T14:40:11Z: Queue empty, terminating
+2020-06-15T14:41:30Z: Processing 00000000/5ee7889a630dc3...
+2020-06-15T14:41:30Z:   doing Cpanel::UserTasks::VersionControl::create
+2020-06-15T14:41:30Z: Queue empty, terminating

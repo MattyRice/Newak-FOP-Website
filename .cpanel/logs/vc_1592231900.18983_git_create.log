@@ -1,0 +1,5 @@
+Running command: /usr/local/cpanel/3rdparty/bin/git clone --origin=origin https://github.com/RxNexium/newarkfop.git /home/waw68qveviqa/repositories/newarkfop
+
+Cloning into '/home/waw68qveviqa/repositories/newarkfop'...
+fatal: could not read Username for 'https://github.com': No such device or address
+/home/waw68qveviqa/repositories/newarkfop may exist, and may need to be cleaned up.
