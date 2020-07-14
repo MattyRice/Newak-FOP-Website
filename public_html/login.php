@@ -41,113 +41,104 @@ if (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) {
 
 <head>
 	<meta charset="utf-8">
+	<meta name="google-signin-client_id" content="768195962441-vhj7dm86pt0elr7tvh524n6bnplv9dt4.apps.googleusercontent.com">
 	<title>Newark FOP Login</title>
-	<link rel="stylesheet" type="text/css" href="login.css">
-	<link rel="stylesheet" type="text/css" href="loginstyle.css">
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="homestyle.css">
+	<!-- Bootstrap and CSS-->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<!-- Google Platform Library -->
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	
 </head>
 
-<body>
-	<div class="login">
-		<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-		<div class="main_container">
-			<h1 class="login-header">
-				<center>MEMBER LOGIN</center>
-			</h1>
+<body class="text-center">
+	<div class="container mt-3">
+		<div class="col-sm-12 col-md-12">
 
-		</div>
+			<p class="h3 text-center">Member Login</p>
+			<?php
+			$username = $password = $session = $wrong = $status_err = "";
 
-		<?php
-		$username = $password = $session = $wrong = $status_err = "";
+			if ($_SERVER["REQUEST_METHOD"] == "POST") {
+				$username = test_input($_POST["username"]);
+				$password = $_POST["password"];
+				$pass = md5($password);
 
-		if ($_SERVER["REQUEST_METHOD"] == "POST") {
-			$username = test_input($_POST["username"]);
-			$password = $_POST["password"];
-			$pass = md5($password);
+				include('databaselogin.php');
 
-			include('databaselogin.php');
+				$conn = mysqli_connect($servername, $db_user, $db_pass, $database);
 
-			$conn = mysqli_connect($servername, $db_user, $db_pass, $database);
+				if (!$conn) {
+					die("Connection failed" . mysqli_connect_error());
+				}
 
-			if (!$conn) {
-				die("Connection failed" . mysqli_connect_error());
-			}
+				$query = "SELECT * FROM logins WHERE username = '$username'";
 
-			$query = "SELECT * FROM logins WHERE username = '$username'";
+				$data = mysqli_query($conn, $query);
 
-			$data = mysqli_query($conn, $query);
+				if (!$data) {
+					$status_err = "Failed to connect";
+				} else {
+					$rows = mysqli_fetch_assoc($data);
 
-			if (!$data) {
-				$status_err = "Failed to connect";
-			} else {
-				$rows = mysqli_fetch_assoc($data);
+					if ($rows >= 1) {
+						if ($pass == $rows['password']) {
+							$session = $_SESSION["user_id"] = session_id();
 
-				if ($rows >= 1) {
-					if ($pass == $rows['password']) {
-						$session = $_SESSION["user_id"] = session_id();
+							$update_query = "UPDATE logins SET session = '$session' WHERE username = '$username'";
 
-						$update_query = "UPDATE logins SET session = '$session' WHERE username = '$username'";
+							$data2 = mysqli_query($conn, $update_query);
 
-						$data2 = mysqli_query($conn, $update_query);
-
-						if (!$data2) {
-							$status_err = "Failed to connect";
-						} else {
-							if ($rows['officer'] == 1) {
-								header("Location: police.php");
+							if (!$data2) {
+								$status_err = "Failed to connect";
 							} else {
-								header("Location: memberpage.php");
+								if ($rows['officer'] == 1) {
+									header("Location: police.php");
+								} else {
+									header("Location: memberpage.php");
+								}
 							}
+						} else {
+							$wrong = "Incorrect username or password";
 						}
-					} else {
-						$wrong = "Incorrect username or password";
 					}
 				}
+
+				mysqli_close($conn);
 			}
 
-			mysqli_close($conn);
-		}
-
-		function test_input($data)
-		{
-			$data = trim($data);
-			$data = stripslashes($data);
-			$data = htmlspecialchars($data);
-			return $data;
-		}
-		?>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-5 mx-auto">
-					<div class="login-form">
-						<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-							<label for="username">
-								<h2>Username:</h2>
-							</label>
-							<input type="text" id="username" name="username" placeholder="Username" /><br>
-
-							<label for="password">
-								<h2>Password:</h2>
-							</label>
-							<input type="password" id="password" name="password" placeholder="Password" /><br>
-
-							<input type="submit" value="Login" class="login-button" /><br>
-							<span class="error"><i><?php echo $wrong; ?></i></span>
-							<br>
-							<a href="signup.php" class="sign-up">SIGN UP!</a>
-							<br>
-							<a href="forgot.php" class="no-access">FORGOT USERNAME OR PASSWORD?</a>
-						</form>
+			function test_input($data)
+			{
+				$data = trim($data);
+				$data = stripslashes($data);
+				$data = htmlspecialchars($data);
+				return $data;
+			}
+			?>
+			<div class="d-flex justify-content-center">
+					<div class="col-md-4">
+						<div class="login-form">
+							<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+								<input type="text" id="username" name="username" placeholder="Username" class="form-control">
+								<input type="password" id="password" name="password" placeholder="Password" class="form-control"><br>
+								<input type="submit" value="Login" class="btn btn-md btn-primary btm-block mt-2 mb-3">
+								<span class="error"><i><?php echo $wrong; ?></i></span>
+								<br>
+								<div class="g-signin2" data-onsuccess="onSignIn"></div>
+								<a href="signup.php" class="sign-up">SIGN UP!</a>
+								<br>
+								<a href="forgot.php" class="no-access">FORGOT USERNAME OR PASSWORD?</a>
+							</form>
+						</div>
 					</div>
-				</div>
 
 			</div>
-		</div>
+			</div>
 	</div>
-	<center>
 
-	</center>
-	<!-- Footer -->
-	<!-- /Footer -->
 </body>
 
 </html>
