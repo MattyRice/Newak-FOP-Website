@@ -37,22 +37,7 @@ if (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) {
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Newark FOP About Us</title>
-
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-
-</head>
-
 <body>
-
-
-
     <div class="container">
         <div class="jumbotron jumbotron-fluid" id="hero">
             <!-- you can also add something like style="min-height: 70vh;" to the div above -->
@@ -225,5 +210,10 @@ if (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) {
     </div>
 
 </body>
+<!-- Jquery -->
+<script src="js/jquery.min.js"></script>
+<!-- BS JS -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
 
 </html>

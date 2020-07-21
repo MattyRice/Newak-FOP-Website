@@ -38,23 +38,6 @@ if (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) {
 
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<title>Newark FOP Lodge #12</title>
-
-	<!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="homestyle.css">
-	<!-- Bootstrap and CSS-->
-	<link href="css/bootstrap.css" rel="stylesheet">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
-
-</head>
-
 <body>
 	<!-- Alerts and Carousel -->
 	<div class="container">
@@ -194,13 +177,13 @@ if (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) {
 					<h2>
 						NJ FOP Announcements
 					</h2>
-					<p>
+						<div class="justify-content-center">
 						<!-- start sw-rss-feed code -->
 						<script type="text/javascript">
 							rssfeed_url = new Array();
 							rssfeed_url[0] = "https://njfop.org/news/";
-							rssfeed_frame_width = "300";
-							rssfeed_frame_height = "240";
+							rssfeed_frame_width = "270";
+							rssfeed_frame_height = "400";
 							rssfeed_scroll = "off";
 							rssfeed_scroll_step = "6";
 							rssfeed_scroll_bar = "on";
@@ -234,6 +217,7 @@ if (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) {
 							rssfeed_no_items = "0";
 							rssfeed_cache = "3bc9f3bd71410e1651cb9b07108836a8";
 						</script>
+						</div>
 						<script type="text/javascript" src="https://feed.surfing-waves.com/js/rss-feed.js"></script>
 						<!-- The link below helps keep this service FREE, and helps other people find the SW widget. Please be cool and keep it! Thanks. -->
 						<div style="color:#ccc;font-size:10px; text-align:right; width:275px;">powered by <a href="https://surfing-waves.com" rel="noopener" target="_blank" style="color:#ccc;">Surfing Waves</a>

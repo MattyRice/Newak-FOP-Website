@@ -140,5 +140,9 @@ if (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) {
 	</div>
 
 </body>
-
+<!-- Jquery -->
+<script src="js/jquery.min.js"></script>
+<!-- BS JS -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
 </html>

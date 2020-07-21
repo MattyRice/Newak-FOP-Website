@@ -38,13 +38,6 @@
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Newark FOP Contact Us</title>
-		<link rel="stylesheet" type="text/css" href="contactusstyle.css">
-		<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-	</head>
 	<body>
 		<div class="banner">
 			<img class="banner-image" src="fopbanner.jpg">

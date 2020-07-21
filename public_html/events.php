@@ -54,7 +54,9 @@
 	</div>
 	<br>
 </body>
-<!-- Footer -->
-
-<!-- /Footer -->
+<!-- Jquery -->
+<script src="js/jquery.min.js"></script>
+<!-- BS JS -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
 </html>

@@ -54,3 +54,15 @@
   width: 60%
     /* value of your choice which suits your alignment */
 }
+
+.navbar-text-color{
+  color: #fff;
+}
+
+.navbar-nav > li > a {
+  color: #fff !important;
+}
+
+.navbar-nav a:hover {
+color: grey !important;
+}
