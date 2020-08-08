@@ -55,6 +55,8 @@
     /* value of your choice which suits your alignment */
 }
 
+/* Navbar Styling */
+
 .navbar-text-color{
   color: #fff;
 }
@@ -65,4 +67,8 @@
 
 .navbar-nav a:hover {
 color: grey !important;
+}
+
+.header-title-font{
+  font-family: 'Libre Baskerville', serif;
 }

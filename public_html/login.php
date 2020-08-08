@@ -51,16 +51,33 @@ if (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) {
 	<link href="css/style.css" rel="stylesheet">
 	<!-- Google Platform Library -->
 	<script src="https://apis.google.com/js/platform.js" async defer></script>
-	
+	<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1480502115456275',
+      cookie     : true,
+      xfbml      : true,
+      version    : 'v7.0'
+    });
+      
+    FB.AppEvents.logPageView();       
+  };
+  </script>
 </head>
 
 <body class="text-center">
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0&appId=1480502115456275&autoLogAppEvents=1" nonce="ZeXL1Nvi"></script>
+
 	<div class="container mt-3">
 		<div class="col-sm-12 col-md-12">
 
 			<p class="h3 text-center">Member Login</p>
 			<?php
 			$username = $password = $session = $wrong = $status_err = "";
+
+			require once('g-signin.php');
 
 			if ($_SERVER["REQUEST_METHOD"] == "POST") {
 				$username = test_input($_POST["username"]);
@@ -78,6 +95,9 @@ if (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) {
 				$query = "SELECT * FROM logins WHERE username = '$username'";
 
 				$data = mysqli_query($conn, $query);
+
+				// require_once "g-login.php";
+				// $loginURL = $gClient->createAuthUrl();
 
 				if (!$data) {
 					$status_err = "Failed to connect";
@@ -117,6 +137,8 @@ if (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) {
 				$data = htmlspecialchars($data);
 				return $data;
 			}
+
+
 			?>
 			<div class="d-flex justify-content-center">
 					<div class="col-md-4">
@@ -127,7 +149,7 @@ if (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) {
 								<input type="submit" value="Login" class="btn btn-md btn-primary btm-block mt-2 mb-3">
 								<span class="error"><i><?php echo $wrong; ?></i></span>
 								<br>
-								<div class="g-signin2" data-onsuccess="onSignIn"></div>
+								<button onclick="window.location = '<?php echo $login_url;?>'" type="button" class="btn btn-danger">Login with Google</button>
 								<a href="signup.php" class="sign-up">SIGN UP!</a>
 								<br>
 								<a href="forgot.php" class="no-access">FORGOT USERNAME OR PASSWORD?</a>

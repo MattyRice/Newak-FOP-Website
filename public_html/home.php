@@ -5,7 +5,7 @@ define('MyConst', TRUE);
 
 if (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) {
 	$session = $_SESSION["user_id"];
-
+	
 	include('databaselogin.php');
 
 	$conn = mysqli_connect($servername, $db_user, $db_pass, $database);
